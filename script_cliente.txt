@@ -1,0 +1,29 @@
+create table cliente(
+id int not null auto_increment primary key,
+nome char(40) not null,
+email char(50) not null,
+endereco char(60) not null,
+telefone char(13) not null
+) engine=innodb default charset=latin1 collate=latin1_general_cs;
+
+create table pedido(
+oid int NOT NULL auto_increment primary key,
+cliente_id int not null,
+assunto char(40) not null,
+dt_solic datetime,
+dt_aprov datetime,
+dt_agend datetime,
+dt_exec datetime,
+status char(1) not null,
+index cli_id (cliente_id),
+foreign key(cliente_id) references cliente(id) on delete cascade
+) engine=innodb default charset=latin1 collate=latin1_general_cs;
+
+create table ponto(
+pid int not null auto_increment primary key,
+pedido_id int not null,
+origdest int not null,
+endereco char(100) not null,
+index ped_id (pedido_id),
+foreign key(pedido_id) references pedido(oid) on delete cascade
+) engine=innodb default charset=latin1 collate=latin1_general_cs;

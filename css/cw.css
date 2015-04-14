@@ -1,0 +1,24 @@
+.cabecalho { width:978px; height:80px; background:none; margin:0 auto; padding:10px; margin-top:5px; margin-bottom:20px; border:0px; text-align:left; }
+	.logo h1 { float:left; text-transform:lowercase; letter-spacing:-2px; font-size:40px; font-weight:normal; font-family:"Trebuchet MS", Arial; 
+		color:#FFFFFF; }
+	.logo h2 { float:left; text-transform:lowercase; letter-spacing:5px; font-size:10px; color:#FFFFFF; text-align:right; margin-top:-5px; 
+		padding-left:6px; font-weight:bold; color:#073763; } 
+
+
+body { font-family:"Arial"; }
+div { width:900px; height:30px; float:left; border:0px solid red;}
+input[type=button], input[type=submit] { width:100px; height:25px; }
+
+.icons { width:15px; height:15px; padding-top:5px; }
+.fieldName { width:150px; height:20px; float:left; padding-right:10px; padding-top:1px; text-align:right; font:normal 13px Arial; }
+.fieldValue { width:400px; height:20px; float:left; text-align:left; font:normal 12px Arial; }				
+
+.labtexto { width:100px; height:20px; float:left; padding-right:10px; padding-top:3px; text-align:right; font:normal 13px Arial; }
+.ponto { width:550px; height:20px; float:left; text-align:left; font:normal 12px Arial; }
+.assunto { width:250px; height:20px; float:left; text-align:left; font:normal 12px Arial; }
+.distancia { width:150px; height:20px; float:left; padding-left:20px; padding-top:3px; text-align:left; font: bold 12px Arial; }
+
+.botao { width:70px; height:25px; }
+
+.column { width:150px; height:20px; float:left; padding-right:10px; padding-top:1px; text-align:right; font:normal 13px Arial; color:gray; }
+
